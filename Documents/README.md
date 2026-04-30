@@ -19,13 +19,12 @@ Start here before diving into the goals:
 
 Complete these challenges in order:
 
-| Goal | Document |
-|------|----------|
-| Goal 1 | [MS Azure Days Fabric Hackathon - Goal 1](MS%20Azure%20Days%20Fabric%20Hackathon%20-%20Goal%201.pdf) |
-| Goal 2 | [MS Azure Days Fabric Hackathon - Goal 2](MS%20Azure%20Days%20Fabric%20Hackathon%20-%20Goal%202.pdf) |
-| Goal 3 | [MS Azure Days Fabric Hackathon - Goal 3](MS%20Azure%20Days%20Fabric%20Hackathon%20-%20Goal%203.pdf) |
-| Goal 4 | [MS Azure Days Fabric Hackathon - Goal 4](MS%20Azure%20Days%20Fabric%20Hackathon%20-%20Goal%204.pdf) |
-
+| Goal | Document | Description |
+|------|----------|-------------|
+| Goal 1 | [Goal 1](MS%20Azure%20Days%20Fabric%20Hackathon%20-%20Goal%201.pdf) | Ingest data from two sources into Fabric Lakehouse |
+| Goal 2 | [Goal 2](MS%20Azure%20Days%20Fabric%20Hackathon%20-%20Goal%202.pdf) | Transform ingested data for analytics |
+| Goal 3 | [Goal 3](MS%20Azure%20Days%20Fabric%20Hackathon%20-%20Goal%203.pdf) | Use Azure AI to discover intelligence in the data |
+| Goal 4 | [Goal 4](MS%20Azure%20Days%20Fabric%20Hackathon%20-%20Goal%204.pdf) | Model the data and build a report or dashboard |
 
 ---
 
