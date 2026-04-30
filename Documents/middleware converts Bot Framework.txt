@@ -1,0 +1,148 @@
+// middleware converts Bot Framework messages to OpenAI Response API format and sends replies back to the Bot Framework.
+// this code is for debugging and testing, it will log all interactions to the console
+// index_responseapi.js has code for handling OpenAI Response API format in a Bot Emulator environment with a backend bot
+
+const express = require('express');
+const bodyParser = require('body-parser');
+require('dotenv').config();
+
+// Azure Cognitive Search client
+let searchClient = null;
+const useAzureSearch = !!(process.env.AZURE_SEARCH_ENDPOINT && process.env.AZURE_SEARCH_KEY && process.env.AZURE_SEARCH_INDEX);
+if (useAzureSearch) {
+  try {
+    const { SearchClient, AzureKeyCredential } = require('@azure/search-documents');
+    searchClient = new SearchClient(process.env.AZURE_SEARCH_ENDPOINT, process.env.AZURE_SEARCH_INDEX, new AzureKeyCredential(process.env.AZURE_SEARCH_KEY));
+    console.log('Azure Cognitive Search client initialized.');
+  } catch (err) {
+    console.error('Failed to initialize Azure Search client:', err.message);
+    searchClient = null;
+  }
+}
+
+const app = express();
+app.use(bodyParser.json());
+
+//middleware api
+app.post('/api/messages', async (req, res) => {
+  const activity = req.body;
+
+  console.log("\n=== Incoming from Bot Service ===");
+  console.log(JSON.stringify(activity, null, 2));
+
+  if (activity.type === 'message') {
+    const userMessage = activity.text;
+    console.log(`\nUser (${activity.from.id}): ${userMessage}`);
+
+    // If Azure Search is configured, run a simple top-k semantic/regular search
+    let searchResults = [];
+    if (searchClient) {
+      try {
+        console.log('\nQuerying Azure Cognitive Search for relevant docs...');
+        // Use simple search; if semantic search is enabled in the service you can switch to searchClient.search with semantic configuration
+        const topK = parseInt(process.env.SEARCH_TOPK || '3', 10);
+        const iterator = searchClient.search(userMessage, { top: topK });
+        for await (const result of iterator) {
+          // Collect key fields: id, content, metadata
+          searchResults.push(result);
+        }
+        console.log(`Found ${searchResults.length} documents from Azure Search.`);
+      } catch (err) {
+        console.error('Azure Search query failed:', err.message);
+        searchResults = [];
+      }
+    } else {
+      console.log('\nAzure Search not configured; skipping retrieval.');
+    }
+
+    // Create OpenAI Response API equivalent payload
+    // Build OpenAI Response API equivalent payload and include retrieved documents as system/context messages
+    const openAiRequest = {
+      model: "gpt-4.1-mini",
+      input: [],
+      conversation: activity.conversation.id
+    };
+
+    // If we have search results, include them as a system/context message to provide retrieval-augmented context
+    if (searchResults.length > 0) {
+      const docsText = searchResults.map((d, i) => `Doc ${i + 1} (id=${d.id || d.documentId || 'unknown'}): ${d.content || d['content'] || JSON.stringify(d)}${d['@search.score'] ? ` (score=${d['@search.score']})` : ''}`).join('\n\n');
+      openAiRequest.input.push({ role: 'system', content: `Relevant documents from Azure Cognitive Search:\n\n${docsText}` });
+    }
+
+    // Finally, include the user's original message
+    openAiRequest.input.push({ role: "user", content: userMessage });
+
+    console.log("\n=== Translated to OpenAI Response API ===");
+    console.log(JSON.stringify(openAiRequest, null, 2));
+
+    // If OPENAI_API_KEY is present, call the Responses API and use the result. Otherwise fall back to echo.
+    let replyText = `Echo: ${userMessage}`;
+    if (process.env.OPENAI_API_KEY) {
+      try {
+        const axios = require('axios');
+        const resp = await axios.post('https://api.openai.com/v1/responses', openAiRequest, {
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
+          },
+          timeout: 20000
+        });
+
+        // Try to extract text from Responses API output
+        const out = resp.data && resp.data.output;
+        if (Array.isArray(out) && out.length > 0) {
+          // Each output may have a `content` array with objects that include `text` or `type: 'output_text'`.
+          let pieces = [];
+          for (const o of out) {
+            if (Array.isArray(o.content)) {
+              for (const c of o.content) {
+                if (typeof c === 'string') pieces.push(c);
+                else if (c?.type === 'output_text' && typeof c?.text === 'string') pieces.push(c.text);
+                else if (c?.text) pieces.push(String(c.text));
+              }
+            }
+          }
+          if (pieces.length > 0) replyText = pieces.join('\n\n');
+        } else if (resp.data && resp.data.output_text) {
+          replyText = resp.data.output_text;
+        }
+      } catch (err) {
+        console.error('OpenAI Responses API call failed:', err.message);
+        // keep echo fallback
+      }
+    }
+
+    // Convert back to Bot Framework reply format
+    const reply = {
+      type: 'message',
+      from: { id: activity.recipient.id, name: activity.recipient.name },
+      recipient: { id: activity.from.id, role: 'user' },
+      text: replyText,
+      replyToId: activity.id,
+      conversation: { id: activity.conversation.id },
+      locale: activity.locale
+    };
+
+    console.log("\n=== Replying to Bot Service ===");
+    console.log(JSON.stringify(reply, null, 2));
+
+    try {
+      // Send response back to Bot Framework
+      const axios = require('axios');
+      const url = `${activity.serviceUrl}/v3/conversations/${activity.conversation.id}/activities`;
+      await axios.post(url, reply, {
+        headers: { 'Content-Type': 'application/json' }
+      });
+      console.log('Reply sent to Bot Emulator.');
+    } catch (error) {
+      console.error('Failed to send reply to Bot Emulator:', error.message);
+    }
+  }
+
+  res.sendStatus(200); // Acknowledge receipt of the activity
+});
+
+const PORT = process.env.PORT || 5055;
+app.listen(PORT, () => {
+  console.log(`Middleware running on port ${PORT}`);
+});

@@ -1,0 +1,32 @@
+"I want to schedule a meeting with the following people: Name1, Name2, Name3...
+The meeting should happen during this week, next week, or a specific date range.
+Please find available time slots between 8:00 AM and 5:00 PM Central Time where everyone is available.
+Once I pick a time slot, create the calendar event for all attendees."
+
+
+
+Input Parsing
+
+Extract names from comma-separated list
+Resolve names to email addresses using enterprise directory
+Interpret date range (e.g., "this week", "next week") into actual dates
+
+
+
+Availability Search
+
+Check calendars for all participants
+Filter for overlapping availability between 8 AM and 5 PM CST
+
+
+
+Output
+
+Return a list of available time slots with date and time
+Allow user to select a preferred slot
+
+
+
+Action
+
+Upon selection, create and send a calendar invite with subject and optional agenda

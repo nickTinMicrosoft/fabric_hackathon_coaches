@@ -1,0 +1,22 @@
+Agents
+
+Hospital
+https://app.fabric.microsoft.com/groups/b74c3b9e-74ec-450a-b412-a0f50ea45d06/aiskills/603c1ef8-57c2-4b7b-af9e-a7c7b03daf67?experience=fabric-developer
+
+
+Train
+https://app.fabric.microsoft.com/groups/b74c3b9e-74ec-450a-b412-a0f50ea45d06/aiskills/21ff4544-56bf-486f-ae0f-f78090454b7b?experience=fabric-developer
+
+
+
+Devops
+https://app.fabric.microsoft.com/groups/b74c3b9e-74ec-450a-b412-a0f50ea45d06/aiskills/ef6c2915-0994-4f69-bc9b-7b8e2f5959af?experience=fabric-developer
+
+
+
+Documents
+
+
+
+
+Catalog \ Purview
