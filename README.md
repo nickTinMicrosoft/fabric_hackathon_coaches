@@ -74,6 +74,7 @@ Organized by technology:
 | [Hospital](Scripts/Python/Hospital/) | Simulates patient vitals and movement → Event Hub |
 | [Metra](Scripts/Python/Metra/) | Simulates NYC metro train telemetry → Event Hub / IoT Hub |
 | [FlightTracker](Scripts/Python/FlightTracker/) | Streams live ADS-B aircraft data from PiAware → Event Hub |
+| [LineageAgent](Scripts/Python/LineageAgent/) | Fabric notebook — hydrates Lakehouse with catalog & lineage metadata for a Data Agent |
 | [Orchistrator](Scripts/Python/Orchistrator/) | Multi-agent orchestrator using Azure OpenAI + AI Search + Fabric Agents |
 | [Tumor Data](Scripts/Python/Tumor%20Data/) | Generates Parquet files from tumor images with synthetic metadata |
 
