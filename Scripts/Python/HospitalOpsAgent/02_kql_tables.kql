@@ -1,0 +1,86 @@
+// ============================================================
+// Hospital Operations Agent — KQL Table Definitions
+// Run these commands in your Fabric KQL Database query editor
+// ============================================================
+
+// -----------------------------------------------
+// Table 1: HospitalVitals
+// Stores real-time patient vital-sign readings
+// -----------------------------------------------
+.create table HospitalVitals (
+    patient_id: string,
+    age: int,
+    gender: string,
+    diagnosis_code: string,
+    condition: string,
+    heart_rate: int,
+    bp_systolic: int,
+    bp_diastolic: int,
+    temperature_f: real,
+    spo2: int,
+    respiratory_rate: int,
+    timestamp: datetime
+)
+
+// -----------------------------------------------
+// Table 2: HospitalMovement
+// Stores patient movement / location events
+// -----------------------------------------------
+.create table HospitalMovement (
+    patient_id: string,
+    age: int,
+    gender: string,
+    diagnosis_code: string,
+    diagnosis_desc: string,
+    event_type: string,
+    from_location: string,
+    to_location: string,
+    floor: string,
+    timestamp: datetime
+)
+
+// -----------------------------------------------
+// Enable streaming ingestion on both tables
+// -----------------------------------------------
+.alter table HospitalVitals policy streamingingestion enable
+
+.alter table HospitalMovement policy streamingingestion enable
+
+// -----------------------------------------------
+// Ingestion mapping for HospitalVitals (JSON)
+// Use this mapping name when connecting Eventstream
+// -----------------------------------------------
+.create table HospitalVitals ingestion json mapping 'HospitalVitals_mapping'
+    '[{"column":"patient_id","path":"$.patient_id","datatype":"string"},'
+    '{"column":"age","path":"$.age","datatype":"int"},'
+    '{"column":"gender","path":"$.gender","datatype":"string"},'
+    '{"column":"diagnosis_code","path":"$.diagnosis_code","datatype":"string"},'
+    '{"column":"condition","path":"$.condition","datatype":"string"},'
+    '{"column":"heart_rate","path":"$.heart_rate","datatype":"int"},'
+    '{"column":"bp_systolic","path":"$.bp_systolic","datatype":"int"},'
+    '{"column":"bp_diastolic","path":"$.bp_diastolic","datatype":"int"},'
+    '{"column":"temperature_f","path":"$.temperature_f","datatype":"real"},'
+    '{"column":"spo2","path":"$.spo2","datatype":"int"},'
+    '{"column":"respiratory_rate","path":"$.respiratory_rate","datatype":"int"},'
+    '{"column":"timestamp","path":"$.timestamp","datatype":"datetime"}]'
+
+// -----------------------------------------------
+// Ingestion mapping for HospitalMovement (JSON)
+// Use this mapping name when connecting Eventstream
+// -----------------------------------------------
+.create table HospitalMovement ingestion json mapping 'HospitalMovement_mapping'
+    '[{"column":"patient_id","path":"$.patient_id","datatype":"string"},'
+    '{"column":"age","path":"$.age","datatype":"int"},'
+    '{"column":"gender","path":"$.gender","datatype":"string"},'
+    '{"column":"diagnosis_code","path":"$.diagnosis_code","datatype":"string"},'
+    '{"column":"diagnosis_desc","path":"$.diagnosis_desc","datatype":"string"},'
+    '{"column":"event_type","path":"$.event_type","datatype":"string"},'
+    '{"column":"from_location","path":"$.from_location","datatype":"string"},'
+    '{"column":"to_location","path":"$.to_location","datatype":"string"},'
+    '{"column":"floor","path":"$.floor","datatype":"string"},'
+    '{"column":"timestamp","path":"$.timestamp","datatype":"datetime"}]'
+
+// -----------------------------------------------
+// Verify tables exist
+// -----------------------------------------------
+.show tables
