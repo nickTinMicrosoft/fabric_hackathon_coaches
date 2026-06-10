@@ -51,6 +51,8 @@ EVENTHUB_TRAIN_CONN_STR=
 EVENTHUB_VITALS_CONN_STR=
 EVENTHUB_MOVEMENT_CONN_STR=
 EVENTHUB_FLIGHT_CONN_STR=
+EVENTHUB_WATER_CONN_STR=
+EVENTHUB_WATER_NAME=water-quality
 ```
 
 ---
@@ -73,6 +75,7 @@ Organized by technology:
 |-----|-------------|
 | [Hospital](Scripts/Python/Hospital/) | Simulates patient vitals and movement → Event Hub |
 | [Metra](Scripts/Python/Metra/) | Simulates NYC metro train telemetry → Event Hub / IoT Hub |
+| [WaterQuality](Scripts/Python/WaterQuality/) | Simulates water quality monitoring across 18 sensor sites → Event Hub |
 | [FlightTracker](Scripts/Python/FlightTracker/) | Streams live ADS-B aircraft data from PiAware → Event Hub |
 | [LineageAgent](Scripts/Python/LineageAgent/) | Fabric notebook — hydrates Lakehouse with catalog & lineage metadata for a Data Agent |
 | [HospitalOpsAgent](Scripts/Python/HospitalOpsAgent/) | Complete guide to build a Fabric Data Agent for real-time hospital operations monitoring |

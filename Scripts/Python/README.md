@@ -12,6 +12,7 @@ All apps load secrets from a `.env` file in the project root using `python-doten
 |--------|-------------|
 | [Hospital](Hospital/) | Simulates patient vitals and movement events → Azure Event Hub |
 | [Metra](Metra/) | Simulates NYC metro train telemetry (3 lines) → Azure Event Hub or IoT Hub |
+| [WaterQuality](WaterQuality/) | Simulates water quality monitoring across 18 sensor sites → Azure Event Hub |
 | [FlightTracker](FlightTracker/) | Streams live ADS-B aircraft data from a PiAware device → Azure Event Hub |
 | [LineageAgent](LineageAgent/) | Fabric notebook that hydrates a Lakehouse with catalog & lineage metadata for a Data Agent |
 | [Orchistrator](Orchistrator/) | Multi-agent orchestrator using Azure OpenAI, AI Search, and Fabric Agents |
