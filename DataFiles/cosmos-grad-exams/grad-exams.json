@@ -1,0 +1,907 @@
+[
+  {
+    "id": "gradexam-1-LSAT-1",
+    "type": "gradExamResult",
+    "studentId": 1,
+    "studentName": "Andrew Fender",
+    "exam": "LSAT",
+    "targetDegree": "Juris Doctor (JD)",
+    "attemptNumber": 1,
+    "testDate": "2026-08-28",
+    "score": 164,
+    "scoreScaleMin": 120,
+    "scoreScaleMax": 180,
+    "admitThreshold": 155,
+    "percentile": 73,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 2.67,
+      "concentration": "LSAT",
+      "relevantSubjects": [
+        "ENG"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 3.3,
+      "relevantCourses": [
+        {
+          "courseNumber": "ENG100",
+          "courseName": "Introduction to English Literature",
+          "letterGrade": "B+",
+          "qualityPoints": 3.3
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-4-MSTAT-1",
+    "type": "gradExamResult",
+    "studentId": 4,
+    "studentName": "Daniel Edstrom",
+    "exam": "MSTAT",
+    "targetDegree": "M.S. Statistics",
+    "attemptNumber": 1,
+    "testDate": "2027-02-28",
+    "score": 662,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 77,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 2.0,
+      "concentration": "MSTAT",
+      "relevantSubjects": [
+        "MATH"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 3.0,
+      "relevantCourses": [
+        {
+          "courseNumber": "MATH100",
+          "courseName": "College Algebra",
+          "letterGrade": "B",
+          "qualityPoints": 3.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-5-LSAT-1",
+    "type": "gradExamResult",
+    "studentId": 5,
+    "studentName": "Edgar Ortiz",
+    "exam": "LSAT",
+    "targetDegree": "Juris Doctor (JD)",
+    "attemptNumber": 1,
+    "testDate": "2027-03-28",
+    "score": 176,
+    "scoreScaleMin": 120,
+    "scoreScaleMax": 180,
+    "admitThreshold": 155,
+    "percentile": 93,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 3.0,
+      "concentration": "LSAT",
+      "relevantSubjects": [
+        "HIST"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 4.0,
+      "relevantCourses": [
+        {
+          "courseNumber": "HIST100",
+          "courseName": "Introduction to American History",
+          "letterGrade": "A",
+          "qualityPoints": 4.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-6-GRE-1",
+    "type": "gradExamResult",
+    "studentId": 6,
+    "studentName": "Liam Anderson",
+    "exam": "GRE",
+    "targetDegree": "M.S. (General)",
+    "attemptNumber": 1,
+    "testDate": "2027-04-28",
+    "score": 308,
+    "scoreScaleMin": 260,
+    "scoreScaleMax": 340,
+    "admitThreshold": 310,
+    "percentile": 60,
+    "passed": false,
+    "undergradContext": {
+      "overallGpa": 2.5,
+      "concentration": "GRE",
+      "relevantSubjects": [
+        "BUS",
+        "CS"
+      ],
+      "relevantCourseCount": 2,
+      "relevantGpa": 2.5,
+      "relevantCourses": [
+        {
+          "courseNumber": "CS103",
+          "courseName": "Algorithms",
+          "letterGrade": "B-",
+          "qualityPoints": 2.7
+        },
+        {
+          "courseNumber": "BUS102",
+          "courseName": "Marketing Principles",
+          "letterGrade": "C+",
+          "qualityPoints": 2.3
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-6-GRE-2",
+    "type": "gradExamResult",
+    "studentId": 6,
+    "studentName": "Liam Anderson",
+    "exam": "GRE",
+    "targetDegree": "M.S. (General)",
+    "attemptNumber": 2,
+    "testDate": "2027-08-28",
+    "score": 315,
+    "scoreScaleMin": 260,
+    "scoreScaleMax": 340,
+    "admitThreshold": 310,
+    "percentile": 69,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 2.5,
+      "concentration": "GRE",
+      "relevantSubjects": [
+        "BUS",
+        "CS"
+      ],
+      "relevantCourseCount": 2,
+      "relevantGpa": 2.5,
+      "relevantCourses": [
+        {
+          "courseNumber": "CS103",
+          "courseName": "Algorithms",
+          "letterGrade": "B-",
+          "qualityPoints": 2.7
+        },
+        {
+          "courseNumber": "BUS102",
+          "courseName": "Marketing Principles",
+          "letterGrade": "C+",
+          "qualityPoints": 2.3
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-8-GMAT-1",
+    "type": "gradExamResult",
+    "studentId": 8,
+    "studentName": "Noah Carter",
+    "exam": "GMAT",
+    "targetDegree": "M.B.A.",
+    "attemptNumber": 1,
+    "testDate": "2027-02-28",
+    "score": 750,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 92,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 3.65,
+      "concentration": "GMAT",
+      "relevantSubjects": [
+        "BUS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 4.0,
+      "relevantCourses": [
+        {
+          "courseNumber": "BUS106",
+          "courseName": "Operations Management",
+          "letterGrade": "A",
+          "qualityPoints": 4.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-10-GRE-1",
+    "type": "gradExamResult",
+    "studentId": 10,
+    "studentName": "Oliver Edwards",
+    "exam": "GRE",
+    "targetDegree": "M.S. (General)",
+    "attemptNumber": 1,
+    "testDate": "2026-09-28",
+    "score": 308,
+    "scoreScaleMin": 260,
+    "scoreScaleMax": 340,
+    "admitThreshold": 310,
+    "percentile": 60,
+    "passed": false,
+    "undergradContext": {
+      "overallGpa": 2.3,
+      "concentration": "GRE",
+      "relevantSubjects": [
+        "CS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 2.3,
+      "relevantCourses": [
+        {
+          "courseNumber": "CS105",
+          "courseName": "Operating Systems",
+          "letterGrade": "C+",
+          "qualityPoints": 2.3
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-11-GRE-1",
+    "type": "gradExamResult",
+    "studentId": 11,
+    "studentName": "Ava Foster",
+    "exam": "GRE",
+    "targetDegree": "M.S. (General)",
+    "attemptNumber": 1,
+    "testDate": "2026-10-28",
+    "score": 325,
+    "scoreScaleMin": 260,
+    "scoreScaleMax": 340,
+    "admitThreshold": 310,
+    "percentile": 81,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 3.7,
+      "concentration": "GRE",
+      "relevantSubjects": [
+        "CS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 3.7,
+      "relevantCourses": [
+        {
+          "courseNumber": "CS105",
+          "courseName": "Operating Systems",
+          "letterGrade": "A-",
+          "qualityPoints": 3.7
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-13-GRE-1",
+    "type": "gradExamResult",
+    "studentId": 13,
+    "studentName": "Sophia Harris",
+    "exam": "GRE",
+    "targetDegree": "M.S. (General)",
+    "attemptNumber": 1,
+    "testDate": "2026-08-28",
+    "score": 328,
+    "scoreScaleMin": 260,
+    "scoreScaleMax": 340,
+    "admitThreshold": 310,
+    "percentile": 85,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 3.7,
+      "concentration": "GRE",
+      "relevantSubjects": [
+        "CS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 3.7,
+      "relevantCourses": [
+        {
+          "courseNumber": "CS107",
+          "courseName": "Software Engineering",
+          "letterGrade": "A-",
+          "qualityPoints": 3.7
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-16-GRE-1",
+    "type": "gradExamResult",
+    "studentId": 16,
+    "studentName": "James Lewis",
+    "exam": "GRE",
+    "targetDegree": "M.S. (General)",
+    "attemptNumber": 1,
+    "testDate": "2026-07-28",
+    "score": 310,
+    "scoreScaleMin": 260,
+    "scoreScaleMax": 340,
+    "admitThreshold": 310,
+    "percentile": 62,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 3.0,
+      "concentration": "GRE",
+      "relevantSubjects": [
+        "CS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 3.0,
+      "relevantCourses": [
+        {
+          "courseNumber": "CS108",
+          "courseName": "Artificial Intelligence",
+          "letterGrade": "B",
+          "qualityPoints": 3.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-17-GRE-1",
+    "type": "gradExamResult",
+    "studentId": 17,
+    "studentName": "Mia Martinez",
+    "exam": "GRE",
+    "targetDegree": "M.S. (General)",
+    "attemptNumber": 1,
+    "testDate": "2026-08-28",
+    "score": 279,
+    "scoreScaleMin": 260,
+    "scoreScaleMax": 340,
+    "admitThreshold": 310,
+    "percentile": 24,
+    "passed": false,
+    "undergradContext": {
+      "overallGpa": 0.0,
+      "concentration": "GRE",
+      "relevantSubjects": [
+        "CS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 0.0,
+      "relevantCourses": [
+        {
+          "courseNumber": "CS109",
+          "courseName": "Machine Learning",
+          "letterGrade": "F",
+          "qualityPoints": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-17-GRE-2",
+    "type": "gradExamResult",
+    "studentId": 17,
+    "studentName": "Mia Martinez",
+    "exam": "GRE",
+    "targetDegree": "M.S. (General)",
+    "attemptNumber": 2,
+    "testDate": "2026-12-28",
+    "score": 291,
+    "scoreScaleMin": 260,
+    "scoreScaleMax": 340,
+    "admitThreshold": 310,
+    "percentile": 39,
+    "passed": false,
+    "undergradContext": {
+      "overallGpa": 0.0,
+      "concentration": "GRE",
+      "relevantSubjects": [
+        "CS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 0.0,
+      "relevantCourses": [
+        {
+          "courseNumber": "CS109",
+          "courseName": "Machine Learning",
+          "letterGrade": "F",
+          "qualityPoints": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-19-GRE-1",
+    "type": "gradExamResult",
+    "studentId": 19,
+    "studentName": "Charlotte Nelson",
+    "exam": "GRE",
+    "targetDegree": "M.S. (General)",
+    "attemptNumber": 1,
+    "testDate": "2026-10-28",
+    "score": 325,
+    "scoreScaleMin": 260,
+    "scoreScaleMax": 340,
+    "admitThreshold": 310,
+    "percentile": 81,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 3.7,
+      "concentration": "GRE",
+      "relevantSubjects": [
+        "CS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 3.7,
+      "relevantCourses": [
+        {
+          "courseNumber": "CS109",
+          "courseName": "Machine Learning",
+          "letterGrade": "A-",
+          "qualityPoints": 3.7
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-21-GMAT-1",
+    "type": "gradExamResult",
+    "studentId": 21,
+    "studentName": "Amelia Roberts",
+    "exam": "GMAT",
+    "targetDegree": "M.B.A.",
+    "attemptNumber": 1,
+    "testDate": "2027-03-28",
+    "score": 763,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 94,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 4.0,
+      "concentration": "GMAT",
+      "relevantSubjects": [
+        "BUS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 4.0,
+      "relevantCourses": [
+        {
+          "courseNumber": "BUS101",
+          "courseName": "Introduction to Business",
+          "letterGrade": "A",
+          "qualityPoints": 4.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-22-GMAT-1",
+    "type": "gradExamResult",
+    "studentId": 22,
+    "studentName": "Henry Scott",
+    "exam": "GMAT",
+    "targetDegree": "M.B.A.",
+    "attemptNumber": 1,
+    "testDate": "2027-04-28",
+    "score": 698,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 83,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 4.0,
+      "concentration": "GMAT",
+      "relevantSubjects": [
+        "BUS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 4.0,
+      "relevantCourses": [
+        {
+          "courseNumber": "BUS101",
+          "courseName": "Introduction to Business",
+          "letterGrade": "A",
+          "qualityPoints": 4.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-23-GMAT-1",
+    "type": "gradExamResult",
+    "studentId": 23,
+    "studentName": "Evelyn Turner",
+    "exam": "GMAT",
+    "targetDegree": "M.B.A.",
+    "attemptNumber": 1,
+    "testDate": "2027-05-28",
+    "score": 556,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 59,
+    "passed": false,
+    "undergradContext": {
+      "overallGpa": 2.0,
+      "concentration": "GMAT",
+      "relevantSubjects": [
+        "BUS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 2.0,
+      "relevantCourses": [
+        {
+          "courseNumber": "BUS101",
+          "courseName": "Introduction to Business",
+          "letterGrade": "C",
+          "qualityPoints": 2.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-24-GMAT-1",
+    "type": "gradExamResult",
+    "studentId": 24,
+    "studentName": "Alexander Walker",
+    "exam": "GMAT",
+    "targetDegree": "M.B.A.",
+    "attemptNumber": 1,
+    "testDate": "2027-02-28",
+    "score": 550,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 58,
+    "passed": false,
+    "undergradContext": {
+      "overallGpa": 2.3,
+      "concentration": "GMAT",
+      "relevantSubjects": [
+        "BUS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 2.3,
+      "relevantCourses": [
+        {
+          "courseNumber": "BUS102",
+          "courseName": "Marketing Principles",
+          "letterGrade": "C+",
+          "qualityPoints": 2.3
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-24-GMAT-2",
+    "type": "gradExamResult",
+    "studentId": 24,
+    "studentName": "Alexander Walker",
+    "exam": "GMAT",
+    "targetDegree": "M.B.A.",
+    "attemptNumber": 2,
+    "testDate": "2027-06-28",
+    "score": 637,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 73,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 2.3,
+      "concentration": "GMAT",
+      "relevantSubjects": [
+        "BUS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 2.3,
+      "relevantCourses": [
+        {
+          "courseNumber": "BUS102",
+          "courseName": "Marketing Principles",
+          "letterGrade": "C+",
+          "qualityPoints": 2.3
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-25-GMAT-1",
+    "type": "gradExamResult",
+    "studentId": 25,
+    "studentName": "Harper Young",
+    "exam": "GMAT",
+    "targetDegree": "M.B.A.",
+    "attemptNumber": 1,
+    "testDate": "2027-03-28",
+    "score": 663,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 77,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 3.0,
+      "concentration": "GMAT",
+      "relevantSubjects": [
+        "BUS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 3.0,
+      "relevantCourses": [
+        {
+          "courseNumber": "BUS103",
+          "courseName": "Financial Accounting",
+          "letterGrade": "B",
+          "qualityPoints": 3.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-27-GMAT-1",
+    "type": "gradExamResult",
+    "studentId": 27,
+    "studentName": "Abigail Baker",
+    "exam": "GMAT",
+    "targetDegree": "M.B.A.",
+    "attemptNumber": 1,
+    "testDate": "2027-05-28",
+    "score": 507,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 51,
+    "passed": false,
+    "undergradContext": {
+      "overallGpa": 2.0,
+      "concentration": "GMAT",
+      "relevantSubjects": [
+        "BUS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 2.0,
+      "relevantCourses": [
+        {
+          "courseNumber": "BUS103",
+          "courseName": "Financial Accounting",
+          "letterGrade": "C",
+          "qualityPoints": 2.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-27-GMAT-2",
+    "type": "gradExamResult",
+    "studentId": 27,
+    "studentName": "Abigail Baker",
+    "exam": "GMAT",
+    "targetDegree": "M.B.A.",
+    "attemptNumber": 2,
+    "testDate": "2027-09-28",
+    "score": 628,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 71,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 2.0,
+      "concentration": "GMAT",
+      "relevantSubjects": [
+        "BUS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 2.0,
+      "relevantCourses": [
+        {
+          "courseNumber": "BUS103",
+          "courseName": "Financial Accounting",
+          "letterGrade": "C",
+          "qualityPoints": 2.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-32-GMAT-1",
+    "type": "gradExamResult",
+    "studentId": 32,
+    "studentName": "Joseph Flores",
+    "exam": "GMAT",
+    "targetDegree": "M.B.A.",
+    "attemptNumber": 1,
+    "testDate": "2027-02-28",
+    "score": 693,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 82,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 3.3,
+      "concentration": "GMAT",
+      "relevantSubjects": [
+        "BUS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 3.3,
+      "relevantCourses": [
+        {
+          "courseNumber": "BUS107",
+          "courseName": "Organizational Behavior",
+          "letterGrade": "B+",
+          "qualityPoints": 3.3
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-34-GMAT-1",
+    "type": "gradExamResult",
+    "studentId": 34,
+    "studentName": "David Hall",
+    "exam": "GMAT",
+    "targetDegree": "M.B.A.",
+    "attemptNumber": 1,
+    "testDate": "2027-04-28",
+    "score": 626,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 71,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 3.0,
+      "concentration": "GMAT",
+      "relevantSubjects": [
+        "BUS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 3.0,
+      "relevantCourses": [
+        {
+          "courseNumber": "BUS108",
+          "courseName": "Corporate Finance",
+          "letterGrade": "B",
+          "qualityPoints": 3.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-36-GMAT-1",
+    "type": "gradExamResult",
+    "studentId": 36,
+    "studentName": "Samuel Jenkins",
+    "exam": "GMAT",
+    "targetDegree": "M.B.A.",
+    "attemptNumber": 1,
+    "testDate": "2027-02-28",
+    "score": 713,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 86,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 4.0,
+      "concentration": "GMAT",
+      "relevantSubjects": [
+        "BUS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 4.0,
+      "relevantCourses": [
+        {
+          "courseNumber": "BUS109",
+          "courseName": "Strategic Management",
+          "letterGrade": "A",
+          "qualityPoints": 4.0
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-38-GMAT-1",
+    "type": "gradExamResult",
+    "studentId": 38,
+    "studentName": "Christopher Long",
+    "exam": "GMAT",
+    "targetDegree": "M.B.A.",
+    "attemptNumber": 1,
+    "testDate": "2027-04-28",
+    "score": 676,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 79,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 3.3,
+      "concentration": "GMAT",
+      "relevantSubjects": [
+        "BUS"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 3.3,
+      "relevantCourses": [
+        {
+          "courseNumber": "BUS110",
+          "courseName": "Entrepreneurship",
+          "letterGrade": "B+",
+          "qualityPoints": 3.3
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-41-MSTAT-1",
+    "type": "gradExamResult",
+    "studentId": 41,
+    "studentName": "Chloe Murphy",
+    "exam": "MSTAT",
+    "targetDegree": "M.S. Statistics",
+    "attemptNumber": 1,
+    "testDate": "2027-08-28",
+    "score": 711,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 85,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 3.7,
+      "concentration": "MSTAT",
+      "relevantSubjects": [
+        "MATH"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 3.7,
+      "relevantCourses": [
+        {
+          "courseNumber": "MATH101",
+          "courseName": "Calculus I",
+          "letterGrade": "A-",
+          "qualityPoints": 3.7
+        }
+      ]
+    }
+  },
+  {
+    "id": "gradexam-42-MSTAT-1",
+    "type": "gradExamResult",
+    "studentId": 42,
+    "studentName": "Joshua Reed",
+    "exam": "MSTAT",
+    "targetDegree": "M.S. Statistics",
+    "attemptNumber": 1,
+    "testDate": "2027-09-28",
+    "score": 710,
+    "scoreScaleMin": 200,
+    "scoreScaleMax": 800,
+    "admitThreshold": 600,
+    "percentile": 85,
+    "passed": true,
+    "undergradContext": {
+      "overallGpa": 4.0,
+      "concentration": "MSTAT",
+      "relevantSubjects": [
+        "MATH"
+      ],
+      "relevantCourseCount": 1,
+      "relevantGpa": 4.0,
+      "relevantCourses": [
+        {
+          "courseNumber": "MATH102",
+          "courseName": "Calculus II",
+          "letterGrade": "A",
+          "qualityPoints": 4.0
+        }
+      ]
+    }
+  }
+]
