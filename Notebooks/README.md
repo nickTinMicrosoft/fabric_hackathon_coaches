@@ -26,4 +26,6 @@ under `Notebooks/`. All notebooks resolve workspace items by name at runtime (no
 
 | Notebook | What it does |
 | --- | --- |
-| `Gold - Business Marts (MLV).ipynb` | Builds the Gold layer as **Materialized Lake Views** in `GoldLakehouse`: four Tier-1 wide marts and six Tier-2 business-question answers, ready for a Direct Lake semantic model and Data Agents. |
+| `Gold - Business Marts (MLV).ipynb` | **Answer key.** Builds the Gold layer as **Materialized Lake Views** in `GoldLakehouse`: four Tier-1 wide marts and six Tier-2 business-question answers, ready for a Direct Lake semantic model and Data Agents. |
+| `5 - Gold Business Marts MLV Learning Lab.ipynb` | **Attendee lab.** Guided, prompt-only version of the MLV notebook (markdown prompts, no implementation code) — attendees build the marts themselves with Copilot. |
+| `6 - Student Success Data Agent Learning Lab.ipynb` | **Attendee lab.** Guided, prompt-only lab for building a Student Success Data Agent over the Gold marts (portal steps + decisions, no SDK/API code supplied). |
