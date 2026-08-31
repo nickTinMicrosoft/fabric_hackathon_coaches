@@ -1,7 +1,7 @@
 # Sudsberry Property Assessment Data Platform
 
-This folder contains a synthetic property-assessment data platform for the
-fictional municipality of Sudsberry, Ontario. It demonstrates how operational
+This folder contains a synthetic property-assessment data platform using
+fictional records for Sudsberry, Ontario. It demonstrates how operational
 assessment records, flexible field-inspection documents, and appeal narratives
 can be combined in Microsoft Fabric without using real people, addresses,
 parcels, or tax records.
